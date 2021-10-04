@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFelix</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/extra.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top">
+        <!--NAVBAR-->
+        <div class="navbar px-10 text-white py-6 mb-20">
+            <div class="nav-content flex justify-between max-limit">
+                <div class="nav-left self-center">
+                    <h1 class="text-2xl">Felix</h1>
+                </div>
+                <div class="nav-right self-center">
+                    <div class="mobile lg:hidden">
+                        <button class="hamburger"><i class="fas fa-bars self-center"></i></button>
+                        <button class="close"><i class="fas fa-times"></i></button>
+                        <div class="nav-mobile flex flex-col justify-around mobile-menu px-4 text-center py-4">
+                            <a class="py-2" href="">Home</a>
+                            <a class="py-2" href="">Services</a>
+                            <a class="py-2" href="">Work</a>
+                            <a class="py-2" href="">Testimonals</a>
+                            <a class="py-2" href="">Contact</a>
+                        </div>
+                    </div>
+                    <div class="tablet hidden lg:flex">
+                        <a class="py-2 px-4" href="">Home</a>
+                        <a class="py-2 px-4" href="">Services</a>
+                        <a class="py-2 px-4" href="">Work</a>
+                        <a class="py-2 px-4" href="">Testimonals</a>
+                        <a class="py-2 px-4" href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAVBAR-->
+    </div>
+    <!--HERO DIV-->
+    <div class="hero px-10 py-5">
+        <div class="hero-content flex flex-col max-limit xl:flex-row xl:my-2">
+            <div class="hero-left xl:w-1/2 xl:self-center">
+                <h1 class="text-3xl text-white text-center xl:text-left">Code. Eat. Sleep. Repeat</h1>
+                <p class="text-white py-6 mx-auto">Hello, my name is Felix. (Known as "FrontFelix"). I am a junior
+                    frontend developer. I have been working with frontend for the past 4 years which has given me a lot
+                    of experience how to work with clients and co-workers such as backend developers. </p>
+                <a class="px-4 py-2 rounded text-center text-white self-center flex text-xl w-1/2 mx-auto contact-btn xl:mx-0 xl:w-1/3"
+                    href="">Contact me <i class="mx-auto self-center pl-4 fas fa-long-arrow-alt-right"></i></a>
+                <div
+                    class="icons flex justify-around w-1/2 mx-auto text-3xl text-white mt-10 xl:mx-0 xl:w-1/4 xl:justify-between">
+                    <div class="icon"><a href=""><i class="fab fa-github"></i></a></div>
+                    <div class="icon"><a href=""><i class="fab fa-twitter"></i></a></div>
+                    <div class="icon"><a href=""><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+            <div class="hero-right mt-16 xl:w-1/2 xl:self-center xl:mt-0">
+                <img class="rounded-full mx-auto xl:mr-0" src="./img/me.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--HERO DIV-->
+
+    <!--SERVICE DIV-->
+    <div class="service-div mt-20">
+        <div class="service-content max-limit flex flex-col xl:flex-row">
+            <div class="service my-4 xl:self-center xl:my-2 xl:pr-6">
+                <h1 class="text-center text-2xl xl:text-left">Front-End Development</h1>
+                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book.</p>
+                <h3 class="text-center text-xl pt-4 xl:text-left">Prices starting at $50 per page.</h3>
+            </div>
+            <div class="service my-8 xl:self-center xl:my-2 xl:px-6">
+                <h1 class="text-center text-2xl xl:text-left">Back-End Development</h1>
+                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book.</p>
+                <h3 class="text-center text-xl pt-4 xl:text-left">Prices starting at $90 per page.</h3>
+            </div>
+            <div class="service my-4 xl:self-center xl:my-2 xl:pl-6">
+                <h1 class="text-center text-2xl xl:text-left">Webstore Design</h1>
+                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book.</p>
+                <h3 class="text-center text-xl pt-4 xl:text-left">Prices starting at $50 per page.</h3>
+            </div>
+        </div>
+    </div>
+    <!--SERVICE DIV-->
+
+    <!--PORTFOLIO DIV-->
+    <div class="portfolio my-20">
+        <div class="portfolio-content max-limit flex flex-col">
+
+        </div>
+    </div>
+    <!--PORTFOLIO DIV-->
+
+    <!--CONTACT DIV-->
+    <div class="contact">
+
+    </div>
+    <!--CONTACT DIV-->
+</body>
+
+
+<script>
+    $(document).ready(function () {
+        $(".close").hide();
+        $(".mobile-menu").hide();
+        $(".hamburger").click(function () {
+            $(".mobile-menu").slideToggle("slow", function () {
+                $(".hamburger").hide();
+                $(".close").show();
+            })
+        })
+        $(".close").click(function () {
+            $(".mobile-menu").slideToggle("slow", function () {
+                $(".close").hide();
+                $(".hamburger").show();
+            })
+        })
+    })
+</script>
+
+
+
+</html>

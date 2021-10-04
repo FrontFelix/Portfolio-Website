@@ -1,0 +1,66 @@
+:root {
+    --mainBlue: #85D5FF;
+    --bgBlack: #1A1A1A;
+}
+
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bgBlack);
+}
+
+.nav-right button {
+    margin-right: 35px;
+}
+.nav-right i {
+    transition: 0.5s;
+}
+
+.mobile-menu {
+    color: var(--bgBlack);
+    background-color: WHITE;
+    right: 25px;
+    position: fixed;
+}
+.hero h1 {
+    font-weight: 900;
+}
+
+.contact-btn {
+    width: 20 0px;
+    background-color: #85D5FF;
+}
+.hero-right img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+}
+.icons a {
+    transition: 0.1s ease-in-out;
+}
+.icons a:hover {
+    color: var(--mainBlue);
+}
+.service h1, .service h3 {
+    font-weight: 700;
+    color: var(--mainBlue);
+}
+.portfolio {
+    background-image: url('../img/SVG/Portfolio\ Background.svg');
+}
+
+
+
+
+@media (min-width: 1280px) {
+    .hero-right img {
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+    }
+    .portfolio {
+        min-height: 100vh;
+        background-size: 70%;
+        background-image: url('../img/SVG/Portfolio\ Background.svg');
+    }
+}
