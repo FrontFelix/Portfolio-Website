@@ -46,8 +46,12 @@ body {
     color: var(--mainBlue);
 }
 .portfolio {
+    background-size: 900%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url('../img/SVG/Portfolio\ Background.svg');
 }
+
 
 
 
@@ -58,9 +62,18 @@ body {
         height: 340px;
         object-fit: cover;
     }
+
+
     .portfolio {
-        min-height: 100vh;
-        background-size: 70%;
+        height: 800px;
+        background-size: 130%;
+        background-position: top;
         background-image: url('../img/SVG/Portfolio\ Background.svg');
+    }
+    .portfolio-right .img-box img {
+        height: 100%;
+    }
+    .portfolio-right, .portfolio-left {
+        min-height: 100%;
     }
 }
