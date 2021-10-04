@@ -52,8 +52,40 @@ body {
     background-image: url('../img/SVG/Portfolio\ Background.svg');
 }
 
+.review-name {
+    color: var(--mainBlue);
+}
 
+.review-message {
+    position: relative;
+}
+.quote {
+    color: var(--mainBlue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(-1, 1);
+}
 
+.custom-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--mainBlue);
+}
+.input-form input {
+    outline: none;
+    border-bottom: 2px solid var(--mainBlue);
+}
+.input-form textarea {
+    resize: none;
+    margin-left: 9px;
+    outline: none;
+    border-bottom: 2px solid var(--mainBlue);
+}
+.input-form {
+    width: 200px;
+}
 
 
 @media (min-width: 1280px) {
@@ -65,15 +97,18 @@ body {
 
 
     .portfolio {
-        height: 800px;
-        background-size: 130%;
-        background-position: top;
+        height: 900px;
+        background-size: cover;
+        background-position-y: -170px;
         background-image: url('../img/SVG/Portfolio\ Background.svg');
     }
-    .portfolio-right .img-box img {
+    .portfolio .img-box img {
         height: 100%;
     }
     .portfolio-right, .portfolio-left {
         min-height: 100%;
+    }
+    .portfolio img {
+        object-fit: cover;
     }
 }

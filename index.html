@@ -13,6 +13,9 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -59,9 +62,9 @@
                     href="">Contact me <i class="mx-auto self-center pl-4 fas fa-long-arrow-alt-right"></i></a>
                 <div
                     class="icons flex justify-around w-1/2 mx-auto text-3xl text-white mt-10 xl:mx-0 xl:w-1/4 xl:justify-between">
-                    <div class="icon"><a href=""><i class="fab fa-github"></i></a></div>
-                    <div class="icon"><a href=""><i class="fab fa-twitter"></i></a></div>
-                    <div class="icon"><a href=""><i class="fab fa-linkedin"></i></a></div>
+                    <div class="icon"><a href="https://github.com/FrontFelix"><i class="fab fa-github"></i></a></div>
+                    <div class="icon"><a href="https://twitter.com/LixDev"><i class="fab fa-twitter"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/felix-bakkum-252b26192/"><i class="fab fa-linkedin"></i></a></div>
                 </div>
             </div>
             <div class="hero-right mt-16 xl:w-1/2 xl:self-center xl:mt-0">
@@ -103,7 +106,7 @@
     <!--SERVICE DIV-->
 
     <!--PORTFOLIO DIV-->
-    <div class="portfolio my-20">
+    <div class="portfolio xl:my-20 2xl:my-28 xl:py-24 py-10 mt-20">
         <div class="portfolio-content max-limit flex flex-col w-full xl:px-0 px-10 xl:flex-row min-h-full py-10">
             <div class="portfolio-left flex flex-col xl:flex-row xl:w-1/2 xl:flex-wrap xl:px-2 xl:min-h-full">
                 <div class="img-box py-4 xl:w-1/2 xl:pr-4">
@@ -123,22 +126,114 @@
                 </div>
             </div>
             <div class="portfolio-right xl flex xl:px-4 flex-col xl:w-1/2 xl:min-h-full xl:justify-between">
-                <div class="img-box py-4 xl:min-h--1/2">
+                <div class="img-box py-4 xl:h-full">
                     <img class="min-h-full" src="./img/portfolio/image6.PNG" alt="">
                 </div>
-                <div class="img-box py-4">
-                    <img class="" src="./img/portfolio/image6.PNG" alt="">
+                <div class="img-box py-4 xl:py-0 xl:h-full xl:pt-4">
+                    <img class="" src="./img/portfolio/image7.PNG" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!--PORTFOLIO DIV-->
 
-    <!--CONTACT DIV-->
-    <div class="contact">
+    <!--CLIENT DIV-->
+    <div class="review">
+        <div class="review-content max-limit my-5 xl:mt-40">
 
-    </div>
-    <!--CONTACT DIV-->
+
+            <div class="main-carousel overflow-hidden w-full">
+                <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
+                    <h1 class="text-2xl review-name">ClientName</h1>
+                    <p class="text-white">Company, Location</p>
+                    <div class="review-message mt-2">
+                        <i class="fas fa-quote-right quote text-xl"></i>
+                        <p class="text-white py-5 text-sm">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever
+                            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                            type
+                            specimen book.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
+                    <h1 class="text-2xl review-name">ClientName</h1>
+                    <p class="text-white">Company, Location</p>
+                    <div class="review-message mt-2">
+                        <i class="fas fa-quote-right quote text-xl"></i>
+                        <p class="text-white py-5 text-sm">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever
+                            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                            type
+                            specimen book.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
+                    <h1 class="text-2xl review-name">Nulzn</h1>
+                    <p class="text-white">Back-End Student, Sweden</p>
+                    <div class="review-message mt-2">
+                        <i class="fas fa-quote-right quote text-xl"></i>
+                        <p class="text-white py-5 text-sm">Felix has been a huge help to me with coding, and his websites are fantastic. He assisted me with Flask, a Python framework for website backends. He also assisted me with javascript, html, and CSS. He knows what he's doing when it comes to web development.</p>
+                    </div>
+                </div>         
+            </div>
+            <ol class="flex justify-around w-1/2 mx-auto my-10">
+                <li class="text-xl self-center"><button><i class="fas fa-long-arrow-alt-left text-white"></i></button></li>
+                <li class="custom-dot self-center"><button></button></li>
+                <li class="custom-dot self-center"><button></button></li>
+                <li class="custom-dot self-center"><button></button></li>
+                <li class=" self-center text-xl"><button><i class="fas fa-long-arrow-alt-right text-white"></i></button></li>
+            </ol>
+        </div>
+        <!--CLIENT DIV-->
+
+        <!--CONTACT DIV-->
+        <div class="contact my-10">
+            <div class="contact-content max-limit flex flex-col px-5">
+                <div class="contact-left">
+                    <h1 class="text-3xl text-white text-center">Get in touch</h1>
+                    <p class="text-center text-white pt-4">If you need a quote for a project or need to ask me anything dont hesitate to send me a message and I will reply as soon as possible! Have a good day!</p>
+                    <div
+                    class="icons flex justify-around w-1/2 mx-auto text-3xl text-white mt-10 xl:mx-0 xl:w-1/4 xl:justify-between">
+                    <div class="icon"><a href="https://github.com/FrontFelix"><i class="fab fa-github"></i></a></div>
+                    <div class="icon"><a href="https://twitter.com/LixDev"><i class="fab fa-twitter"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/felix-bakkum-252b26192/"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+                </div>
+                <div class="contact-right mt-10">
+                    <form action="">
+                        <div class="form-top flex space-between flex-col">
+                            <div class="input-form mx-auto">
+                                <label class="block mx-auto text-white pl-2 pb-3" for="firstname">Your Name</label>
+                                <input class="bg-transparent block mx-auto px--1 text-white" type="text" name="firstname" id="firstname" placeholder="Jonathon Doe">
+                            </div>
+                            <div class="input-form mx-auto pt-5">
+                                <label class="block mx-auto text-white pl-2 pb-3" for="email">Your Email</label>
+                                <input class="bg-transparent block mx-auto px--1 text-white" type="email" name="email" id="email" placeholder="Jonathon@example.com">
+                            </div>
+                        </div>
+                        <div class="form-middle flex space-between flex-col pt-5">
+                            <div class="input-form mx-auto">
+                                <label class="block mx-auto text-white pl-2 pb-3" for="company">Company Name</label>
+                                <input class="bg-transparent block mx-auto px--1 text-white" type="text" name="company" id="company" placeholder="Doe Enterprises">
+                            </div>
+                            <div class="input-form mx-auto pt-5">
+                                <label class="block mx-auto text-white pl-2 pb-3" for="number">Contact Number</label>
+                                <input class="bg-transparent block mx-auto px--1 text-white" type="text" name="number" id="number" placeholder="+12 3456 79901">
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="input-form mx-auto pt-5">
+                                <label class="block mx-auto text-white pl-2 pb-3" for="number">Message</label>
+                                <textarea class="text-white bg-transparent" name="message" id="message" cols="30" rows="10" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--CONTACT DIV-->
 </body>
 
 
@@ -159,6 +254,15 @@
             })
         })
     })
+
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        autoPlay: 2500,
+        contain: true,
+        prevNextButtons: false,
+        cellSelector : ".carousel-cell"
+    });
 </script>
 
 
