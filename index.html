@@ -28,22 +28,22 @@
                 </div>
                 <div class="nav-right self-center">
                     <div class="mobile lg:hidden">
-                        <button class="hamburger"><i class="fas fa-bars self-center"></i></button>
-                        <button class="close"><i class="fas fa-times"></i></button>
-                        <div class="nav-mobile flex flex-col justify-around mobile-menu px-4 text-center py-4">
-                            <a class="py-2" href="">Home</a>
-                            <a class="py-2" href="">Services</a>
-                            <a class="py-2" href="">Work</a>
-                            <a class="py-2" href="">Testimonals</a>
-                            <a class="py-2" href="">Contact</a>
+                        <button class="hamburger hid-close"><i class="fas fa-bars self-center"></i></button>
+                        <button class="close hid-close"><i class="fas fa-times"></i></button>
+                        <div class="nav-mobile flex flex-col justify-around mobile-menu px-8 text-center py-4">
+                            <button onclick="homeClick();" class="py-2" id="home" href="#">Home</button>
+                            <button onclick="serviceClick();" class="py-2" id="services" href="#">Services</button>
+                            <button onclick="workClick();" class="py-2" id="work" href="#">Work</button>
+                            <button onclick="testiClick();" class="py-2" id="testi" href="#">Testimonals</button>
+                            <button onclick="contactClick();" class="py-2">Contact</button>
                         </div>
                     </div>
                     <div class="tablet hidden lg:flex">
-                        <a class="py-2 px-4" href="">Home</a>
-                        <a class="py-2 px-4" href="">Services</a>
-                        <a class="py-2 px-4" href="">Work</a>
-                        <a class="py-2 px-4" href="">Testimonals</a>
-                        <a class="py-2 px-4" href="">Contact</a>
+                        <button onclick="homeClick();" class="py-2 px-4" id="home" href="">Home</button>
+                        <button onclick="serviceClick();" class="py-2 px-4" id="services" href="#">Services</button>
+                        <button onclick="workClick();" class="py-2 px-4" id="work" href="#">Work</button>
+                        <button onclick="testiClick();" class="py-2 px-4" id="testi" href="#">Testimonals</button>
+                        <button onclick="contactClick();" class="py-2 px-4">Contact</button>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
         <!--NAVBAR-->
     </div>
     <!--HERO DIV-->
-    <div class="hero px-10 py-8">
+    <div id="hero" class="hero px-10 py-8">
         <div class="hero-content flex flex-col max-limit xl:flex-row xl:my-2">
             <div class="hero-left xl:w-1/2 xl:self-center">
                 <h1 class="text-3xl text-white text-center xl:text-left">Code. Eat. Sleep. Repeat</h1>
@@ -64,7 +64,8 @@
                     class="icons flex justify-around w-1/2 mx-auto text-3xl text-white mt-10 xl:mx-0 xl:w-1/4 xl:justify-between">
                     <div class="icon"><a href="https://github.com/FrontFelix"><i class="fab fa-github"></i></a></div>
                     <div class="icon"><a href="https://twitter.com/LixDev"><i class="fab fa-twitter"></i></a></div>
-                    <div class="icon"><a href="https://www.linkedin.com/in/felix-bakkum-252b26192/"><i class="fab fa-linkedin"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/felix-bakkum-252b26192/"><i
+                                class="fab fa-linkedin"></i></a></div>
                 </div>
             </div>
             <div class="hero-right mt-16 xl:w-1/2 xl:self-center xl:mt-0">
@@ -75,30 +76,21 @@
     <!--HERO DIV-->
 
     <!--SERVICE DIV-->
-    <div class="service-div mt-20">
+    <div class="service-div mt-32 xl:mt-20 " id="service">
         <div class="service-content max-limit flex flex-col xl:flex-row">
-            <div class="service my-4 xl:self-center xl:my-2 xl:pr-6">
-                <h1 class="text-center text-2xl xl:text-left">Front-End Development</h1>
-                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+            <div class="service my-4 xl:self-center xl:my-2 xl:pr-6 xl:w-1/3">
+                <h1 class="text-center text-2xl xl:text-left py-2">Front-End Development</h1>
+                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">I can convert complex UI designs into pixel-perfect responsive web pages. I can create mobile-first Front End web pages. These web pages can be in the form of a landing page, forums, forms and themes. I can also fix website issues bugs and upgrade Front End.</p>
                 <h3 class="text-center text-xl pt-4 xl:text-left">Prices starting at $50 per page.</h3>
             </div>
-            <div class="service my-8 xl:self-center xl:my-2 xl:px-6">
-                <h1 class="text-center text-2xl xl:text-left">Back-End Development</h1>
-                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+            <div class="service my-8 xl:self-center xl:my-2 xl:px-6 xl:w-1/3">
+                <h1 class="text-center text-2xl xl:text-left py-2">Back-End Development</h1>
+                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">I can create Web applications and chatbots with Node.JS (Javascript). The Back End development I offer is small since I do not have a lot of experience in this area but it can be in form of sending emails with a server or just a chatbot with small commands.</p>
                 <h3 class="text-center text-xl pt-4 xl:text-left">Prices starting at $90 per page.</h3>
             </div>
-            <div class="service my-4 xl:self-center xl:my-2 xl:pl-6">
-                <h1 class="text-center text-2xl xl:text-left">Webstore Design</h1>
-                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.</p>
+            <div class="service my-4 xl:self-center xl:my-2 xl:pl-6 xl:w-1/3">
+                <h1 class="text-center text-2xl xl:text-left py-2">Webstore Design</h1>
+                <p class="text-center pt-2 px-4 text-white xl:text-left xl:px-0">I can convert your design ideas for your web store to a real product using their languages and help. Bring me a design and I will create it as a webstore theme for just you!</p>
                 <h3 class="text-center text-xl pt-4 xl:text-left">Prices starting at $50 per page.</h3>
             </div>
         </div>
@@ -106,19 +98,19 @@
     <!--SERVICE DIV-->
 
     <!--PORTFOLIO DIV-->
-    <div class="portfolio xl:my-20 2xl:my-28 xl:py-24 py-10 mt-20">
+    <div id="portfolio" class="portfolio xl:my-20 2xl:my-28 xl:py-24 py-10 mt-20">
         <div class="portfolio-content max-limit flex flex-col w-full xl:px-0 px-10 xl:flex-row min-h-full py-10">
             <div class="portfolio-left flex flex-col xl:flex-row xl:w-1/2 xl:flex-wrap xl:px-2 xl:min-h-full">
                 <div class="img-box py-4 xl:w-1/2 xl:pr-4">
                     <img src="./img/portfolio/image5.PNG" alt="">
                 </div>
-                <div class="img-box py-4 xl:w-1/2 xl:pl-4">
+                <div class="/portfolio/img-box py-4 xl:w-1/2 xl:pl-4 small">
                     <img src="./img/portfolio/image4.PNG" alt="">
                 </div>
                 <div class="img-box py-4">
                     <img src="./img/portfolio/image1.png" alt="">
                 </div>
-                <div class="img-box py-4 xl:w-1/2 xl:pr-4 xl:py-0 xl:pt-4">
+                <div class="img-box py-4 xl:w-1/2 xl:pr-4 xl:py-0 xl:pt-4 small">
                     <img src="./img/portfolio/image3.PNG" alt="">
                 </div>
                 <div class="img-box py-4 xl:w-1/2 xl:pl-4 xl:py-0 xl:pt-4">
@@ -138,35 +130,28 @@
     <!--PORTFOLIO DIV-->
 
     <!--CLIENT DIV-->
-    <div class="review">
+    <div id="review" class="review">
         <div class="review-content max-limit my-5 xl:mt-40">
 
 
             <div class="main-carousel overflow-hidden w-full">
                 <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
-                    <h1 class="text-2xl review-name">ClientName</h1>
-                    <p class="text-white">Company, Location</p>
+                    <h1 class="text-2xl review-name">Conner</h1>
+                    <p class="text-white">Front-End Developer, Great Britain</p>
                     <div class="review-message mt-2">
                         <i class="fas fa-quote-right quote text-xl"></i>
-                        <p class="text-white py-5 text-sm">Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever
-                            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                            type
-                            specimen book.</p>
+                        <p class="text-white py-5 text-sm">Felix is a promising developer. I've mentored him for a while
+                            now and he shows great drive, passion and ability. His initiative to learn and solve any
+                            problem thrown at him is one of the many reasons he should build your next project!</p>
                     </div>
                 </div>
                 <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
-                    <h1 class="text-2xl review-name">ClientName</h1>
-                    <p class="text-white">Company, Location</p>
+                    <h1 class="text-2xl review-name">Adam</h1>
+                    <p class="text-white">UX / UI Designer, Great Britain</p>
                     <div class="review-message mt-2">
                         <i class="fas fa-quote-right quote text-xl"></i>
-                        <p class="text-white py-5 text-sm">Lorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever
-                            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-                            type
-                            specimen book.</p>
+                        <p class="text-white py-5 text-sm">Felix is a great developer, he has good communication and is
+                            a prospering talent. I would highly recommend choosing him as your next web developer!</p>
                     </div>
                 </div>
                 <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
@@ -174,70 +159,144 @@
                     <p class="text-white">Back-End Student, Sweden</p>
                     <div class="review-message mt-2">
                         <i class="fas fa-quote-right quote text-xl"></i>
-                        <p class="text-white py-5 text-sm">Felix has been a huge help to me with coding, and his websites are fantastic. He assisted me with Flask, a Python framework for website backends. He also assisted me with javascript, html, and CSS. He knows what he's doing when it comes to web development.</p>
+                        <p class="text-white py-5 text-sm">Felix has been a huge help to me with coding, and his
+                            websites are fantastic. He assisted me with Flask, a Python framework for website backends.
+                            He also assisted me with javascript, html, and CSS. He knows what he's doing when it comes
+                            to web development.</p>
                     </div>
-                </div>         
+                </div>
             </div>
             <ol class="flex justify-around w-1/2 mx-auto my-10">
-                <li class="text-xl self-center"><button><i class="fas fa-long-arrow-alt-left text-white"></i></button></li>
+                <li class="text-xl self-center"><button><i class="fas fa-long-arrow-alt-left text-white"></i></button>
+                </li>
                 <li class="custom-dot self-center"><button></button></li>
                 <li class="custom-dot self-center"><button></button></li>
                 <li class="custom-dot self-center"><button></button></li>
-                <li class=" self-center text-xl"><button><i class="fas fa-long-arrow-alt-right text-white"></i></button></li>
+                <li class=" self-center text-xl"><button><i class="fas fa-long-arrow-alt-right text-white"></i></button>
+                </li>
             </ol>
         </div>
-        <!--CLIENT DIV-->
+    </div>
+    <!--CLIENT DIV-->
 
-        <!--CONTACT DIV-->
-        <div class="contact my-10">
-            <div class="contact-content max-limit flex flex-col px-5">
-                <div class="contact-left">
-                    <h1 class="text-3xl text-white text-center">Get in touch</h1>
-                    <p class="text-center text-white pt-4">If you need a quote for a project or need to ask me anything dont hesitate to send me a message and I will reply as soon as possible! Have a good day!</p>
-                    <div
+    <!--CONTACT DIV-->
+    <div id="contact" class="contact my-10 xl:mt-40">
+        <div class="contact-content max-limit flex flex-col px-5 xl:flex-row xl:self-center">
+            <div class="contact-left xl:self-center xl:w-1/2">
+                <h1 class="text-3xl text-white text-center xl:text-left">Get in touch</h1>
+                <p class="text-center text-white pt-4 sm:w-2/3 sm:mx-auto xl:text-left xl:mx-0 self-center">If you need
+                    a quote for a project or need to ask me anything dont hesitate to send me a message and I will reply
+                    as soon as possible! Have a good day!</p>
+                <div
                     class="icons flex justify-around w-1/2 mx-auto text-3xl text-white mt-10 xl:mx-0 xl:w-1/4 xl:justify-between">
                     <div class="icon"><a href="https://github.com/FrontFelix"><i class="fab fa-github"></i></a></div>
                     <div class="icon"><a href="https://twitter.com/LixDev"><i class="fab fa-twitter"></i></a></div>
-                    <div class="icon"><a href="https://www.linkedin.com/in/felix-bakkum-252b26192/"><i class="fab fa-linkedin"></i></a></div>
-                </div>
-                </div>
-                <div class="contact-right mt-10">
-                    <form action="">
-                        <div class="form-top flex space-between flex-col">
-                            <div class="input-form mx-auto">
-                                <label class="block mx-auto text-white pl-2 pb-3" for="firstname">Your Name</label>
-                                <input class="bg-transparent block mx-auto px--1 text-white" type="text" name="firstname" id="firstname" placeholder="Jonathon Doe">
-                            </div>
-                            <div class="input-form mx-auto pt-5">
-                                <label class="block mx-auto text-white pl-2 pb-3" for="email">Your Email</label>
-                                <input class="bg-transparent block mx-auto px--1 text-white" type="email" name="email" id="email" placeholder="Jonathon@example.com">
-                            </div>
-                        </div>
-                        <div class="form-middle flex space-between flex-col pt-5">
-                            <div class="input-form mx-auto">
-                                <label class="block mx-auto text-white pl-2 pb-3" for="company">Company Name</label>
-                                <input class="bg-transparent block mx-auto px--1 text-white" type="text" name="company" id="company" placeholder="Doe Enterprises">
-                            </div>
-                            <div class="input-form mx-auto pt-5">
-                                <label class="block mx-auto text-white pl-2 pb-3" for="number">Contact Number</label>
-                                <input class="bg-transparent block mx-auto px--1 text-white" type="text" name="number" id="number" placeholder="+12 3456 79901">
-                            </div>
-                        </div>
-                        <div class="form-bottom">
-                            <div class="input-form mx-auto pt-5">
-                                <label class="block mx-auto text-white pl-2 pb-3" for="number">Message</label>
-                                <textarea class="text-white bg-transparent" name="message" id="message" cols="30" rows="10" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></textarea>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="icon"><a href="https://www.linkedin.com/in/felix-bakkum-252b26192/"><i
+                                class="fab fa-linkedin"></i></a></div>
                 </div>
             </div>
+            <div class="contact-right mt-10 xl:self-center xl:w-1/2">
+                <form id="myForm" method="POST" action="#contact">
+                    <div class="form-top flex space-between flex-col self-center xl:flex-row">
+                        <div class="input-form mx-auto self-center xl:mx-0">
+                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="firstname">Your Name</label>
+                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
+                                name="firstname" id="firstname" placeholder="Jonathon Doe">
+                        </div>
+                        <div class="input-form mx-auto pt-5 xl:pt-0 self-center xl:mx-6">
+                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="email">Your Email</label>
+                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="email"
+                                name="email" id="email" placeholder="Jonathon@example.com">
+                        </div>
+                    </div>
+                    <div class="form-middle flex space-between flex-col pt-5 xl:flex-row">
+                        <div class="input-form mx-auto xl:self-center xl:mx-0">
+                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="company">Company Name</label>
+                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
+                                name="company" id="company" placeholder="Doe Enterprises">
+                        </div>
+                        <div class="input-form mx-auto pt-5 xl:pt-0 xl:self-center xl:mx-6">
+                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="number">Contact
+                                Number</label>
+                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
+                                name="number" id="number" placeholder="+12 3456 79901">
+                        </div>
+                    </div>
+                    <div class="form-bottom">
+                        <div class="input-form mx-auto pt-5  xl:pt-8 xl:mx-0">
+                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="number">Message</label>
+                            <textarea class="text-white bg-transparent sm:w-full min-w-full" name="message"
+                                cols="10" rows="10"
+                                placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></textarea>
+                        </div>
+                    </div>
+                    <button
+                        class="px-16 xl:px-12 py-2 rounded text-center text-white self-center flex text-xl w-2/4 mt-5 mx-auto contact-btn xl:mr-0 xl:w-1/3"
+                        href="">Send <i class="pl-8 self-center fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </div>
+
         </div>
-        <!--CONTACT DIV-->
+    </div>
+    <!--CONTACT DIV-->
+
+    <div class="footer">
+        <div class="footer-content max-limit mt-24 mb-10 pt-8 w-2/3 mx-auto xl:w-full">
+            <p class="text-center text-white"><i class="pr-4 far fa-copyright"></i>Felix 2021. All Rights Reserved.</p>
+        </div>
+    </div>
 </body>
 
 
 <script>
+    function contactClick() {
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 2000);
+        $(".close").hide();
+        $(".mobile-menu").hide();
+        $(".hamburger").show();
+    }
+
+
+    function testiClick() {
+        $('html, body').animate({
+            scrollTop: $("#review").offset().top
+        }, 2000);
+        $(".close").hide();
+        $(".mobile-menu").hide();
+        $(".hamburger").show();
+    }
+
+    function workClick() {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 2000);
+        $(".close").hide();
+        $(".mobile-menu").hide();
+        $(".hamburger").show();
+    }
+
+    function serviceClick() {
+        $('html, body').animate({
+            scrollTop: $("#service").offset().top
+        }, 2000);
+        $(".close").hide();
+        $(".mobile-menu").hide();
+        $(".hamburger").show();
+    }
+
+    function homeClick() {
+        $('html, body').animate({
+            scrollTop: $("#hero").offset().top
+        }, 2000);
+        $(".close").hide();
+        $(".mobile-menu").hide();
+        $(".hamburger").show();
+    }
+
+
+
     $(document).ready(function () {
         $(".close").hide();
         $(".mobile-menu").hide();
@@ -261,10 +320,28 @@
         autoPlay: 2500,
         contain: true,
         prevNextButtons: false,
-        cellSelector : ".carousel-cell"
+        cellSelector: ".carousel-cell"
     });
+
+
+    
 </script>
+<script>
 
+    $('#myForm').submit(function() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/895313361640783893/ThsX_hnrIaiVjQFM90gkEMuDHJnki4RwT_fb8qLD_K7j3LidQwzupbkwCZWtAietWrt-");
 
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: "The message to send"
+      }
+
+      request.send(JSON.stringify(params));
+})
+  </script>
 
 </html>

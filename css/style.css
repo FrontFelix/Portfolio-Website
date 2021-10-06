@@ -9,8 +9,12 @@ body {
     background-color: var(--bgBlack);
 }
 
-.nav-right button {
-    margin-right: 35px;
+.hid-close {
+    margin-right: 55px;
+}
+
+.service button {
+    margin-right: 0 !important;
 }
 .nav-right i {
     transition: 0.5s;
@@ -19,7 +23,7 @@ body {
 .mobile-menu {
     color: var(--bgBlack);
     background-color: WHITE;
-    right: 25px;
+    right: 29px;
     position: fixed;
 }
 .hero h1 {
@@ -30,6 +34,11 @@ body {
     width: 20 0px;
     background-color: #85D5FF;
 }
+
+.contact button {
+    background-color: #85D5FF;
+}
+
 .hero-right img {
     width: 240px;
     height: 240px;
@@ -88,14 +97,37 @@ body {
 }
 
 
+@media (min-width: 640px) {
+    .input-form {
+        width: 400px;
+    }
+    .input-form textarea {
+        width: 400px !important;
+    }
+}
+.footer-content {
+    border-top: 2px solid var(--mainBlue);
+}
+
 @media (min-width: 1280px) {
+
+    .service p {
+        height: 140px;
+    }
+
     .hero-right img {
         width: 340px;
         height: 340px;
         object-fit: cover;
     }
 
+    .input-form textarea {
+        margin-left: 0;
+        min-width: 556px !important;
+        height: 130px !important;
+    }
 
+   
     .portfolio {
         height: 900px;
         background-size: cover;
@@ -103,12 +135,16 @@ body {
         background-image: url('../img/SVG/Portfolio\ Background.svg');
     }
     .portfolio .img-box img {
-        height: 100%;
+        min-height: 100% !important;
+    }
+    .small img{
+        height: 200px;
     }
     .portfolio-right, .portfolio-left {
-        min-height: 100%;
+        min-height: 100% !important;
     }
     .portfolio img {
         object-fit: cover;
     }
 }
+
