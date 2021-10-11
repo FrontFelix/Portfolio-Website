@@ -20,6 +20,14 @@ body {
     transition: 0.5s;
 }
 
+.navbar button {
+    transition: 0.2s;
+}
+
+.navbar button:hover {
+    color: var(--mainBlue);
+}
+
 .mobile-menu {
     color: var(--bgBlack);
     background-color: WHITE;
@@ -148,3 +156,46 @@ body {
     }
 }
 
+
+.msg-sent, .msg-error {
+    position: fixed;
+    bottom: 40px;
+    right: -300px;
+    display: flex;
+    justify-content: right;
+
+}
+
+.animate-in {
+    animation-name: AnimateIn;
+    animation-duration: 5s;
+}
+.animate-error {
+    animation-name: AnimateIn;
+    animation-duration: 5s;
+}
+
+.msg-error h1 {
+    border-radius: 24px;
+}
+
+
+.msg-sent h1 {
+    border-radius: 24px;
+    background-color: var(--mainBlue);
+}
+
+@keyframes AnimateIn {
+    0%{
+        right: -300px;
+    }
+    30% {
+        right: 0;
+    }
+    80% {
+        right: 0;
+    }
+    100% {
+        right: -300px;
+    }
+}
