@@ -3,6 +3,7 @@ $('#myForm').submit(function (e) {
     const request = new XMLHttpRequest();
     const email = $('#email').val();
     const name = $('#firstname').val();
+    const message = $('textarea#message').val();
     request.open("POST",
         "https://discord.com/api/webhooks/895313361640783893/ThsX_hnrIaiVjQFM90gkEMuDHJnki4RwT_fb8qLD_K7j3LidQwzupbkwCZWtAietWrt-"
         );
@@ -10,9 +11,10 @@ $('#myForm').submit(function (e) {
     const params = {
         username: "NEW Client",
         avatar_url: "",
-        content: `**Email** ${email} \n**Name** ${name}`
+        content: `**Email** \n${email} \n**Name** \n${name}\nMessage\n${message}`
     }
 
     request.send(JSON.stringify(params));
     $('.msg-sent').addClass('animate-in')
+    $('#myForm')[0].reset();
 })

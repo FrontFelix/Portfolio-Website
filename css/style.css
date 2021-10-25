@@ -84,12 +84,17 @@ body {
     transform: scale(-1, 1);
 }
 
-.custom-dot {
+.dotSelector {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     border: 1px solid var(--mainBlue);
 }
+
+.active {
+    background-color: var(--mainBlue);
+}
+
 .input-form input {
     outline: none;
     border-bottom: 2px solid var(--mainBlue);

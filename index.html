@@ -5,15 +5,18 @@
 
     <!--SOCIAL-->
     <meta property="og:title" content="DevFelix (FrontFelix)">
-    <meta property="og:description" content="Junior Front-End Developer">
-    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:description" content="Front-End Developer">
+    <meta property="og:image" content="https://i.imgur.com/BZ8c7OP.jpg">
     <meta property="og:url" content="https://devfelix.com/">
 
     <meta name="twitter:title" content="DevFelix (FrontFelix)">
-    <meta name="twitter:description" content="Junior Front-End Developer">
-    <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg">
+    <meta name="twitter:description" content="Front-End Developer">
+    <meta name="twitter:image" content="https://i.imgur.com/BZ8c7OP.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <!--SOCIAL-->
+
+
+    <link rel="icon" type="image/jpg" href="./img/fd.jpg" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +32,9 @@
 
     <link rel="stylesheet" href="./css/flickity.css" media="screen">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -66,14 +72,13 @@
     <!--HERO DIV-->
     <div id="hero" class="hero px-10 py-8">
         <div class="hero-content flex flex-col max-limit xl:flex-row xl:my-2">
-            <div class="hero-left xl:w-1/2 xl:self-center">
+            <div data-aos="fade-right" class="hero-left xl:w-1/2 xl:self-center">
                 <h1 class="text-3xl text-white text-center xl:text-left">Code. Eat. Sleep. Repeat</h1>
                 <p class="text-white py-6 mx-auto text-center xl:text-left">Hello, my name is Felix. (Known as
-                    "FrontFelix"). I am a junior
-                    frontend developer. I have been working with frontend for the past 4 years which has given me a lot
+                    "FrontFelix"). I am a frontend developer. I have been working with frontend for the past 4 years which has given me a lot
                     of experience how to work with clients and co-workers such as backend developers. </p>
-                <a class="mx-auto xl:px-4 px-32 py-2 rounded text-center text-white self-center flex text-xl contact-btn xl:mx-0 xl:w-1/3"
-                    href="">Contact me <i class="mx-auto self-center xl:pl-4 fas fa-long-arrow-alt-right"></i></a>
+                <button class="mx-auto xl:px-4 px-32 py-2 rounded text-center text-white self-center flex text-xl contact-btn xl:mx-0 xl:w-1/3"
+                onclick="contactClick();">Contact me <i class="mx-auto self-center xl:pl-4 fas fa-long-arrow-alt-right"></i></button>
                 <div
                     class="icons flex justify-around w-1/2 mx-auto text-3xl text-white mt-10 xl:mx-0 xl:w-1/4 xl:justify-between">
                     <div class="icon"><a href="https://github.com/FrontFelix"><i class="fab fa-github"></i></a></div>
@@ -82,7 +87,7 @@
                                 class="fab fa-linkedin"></i></a></div>
                 </div>
             </div>
-            <div class="hero-right mt-16 xl:w-1/2 xl:self-center xl:mt-0">
+            <div data-aos="fade-left" class="hero-right mt-16 xl:w-1/2 xl:self-center xl:mt-0">
                 <img class="rounded-full mx-auto xl:mr-0" src="./img/me.jpg" alt="">
             </div>
         </div>
@@ -90,7 +95,7 @@
     <!--HERO DIV-->
 
     <!--SERVICE DIV-->
-    <div class="service-div mt-32 xl:mt-20 " id="service">
+    <div data-aos="fade-down" class="service-div mt-32 xl:mt-20 " id="service">
         <div class="service-content max-limit flex flex-col xl:flex-row">
             <div class="service my-4 xl:self-center xl:my-2 xl:pr-6 xl:w-1/3">
                 <h1 class="text-center text-2xl xl:text-left py-2">Front-End Development</h1>
@@ -124,27 +129,27 @@
         <div class="portfolio-content max-limit flex flex-col w-full xl:px-0 px-10 xl:flex-row min-h-full py-10">
             <div class="portfolio-left flex flex-col xl:flex-row xl:w-1/2 xl:flex-wrap xl:px-2 xl:min-h-full">
                 <div class="img-box py-4 xl:w-1/2 xl:pr-4">
-                    <img src="./img/portfolio/image5.PNG" alt="">
+                    <img data-aos="fade-up" src="./img/portfolio/image5.PNG" alt="">
                 </div>
                 <div class="/portfolio/img-box py-4 xl:w-1/2 xl:pl-4 small">
-                    <img src="./img/portfolio/image4.PNG" alt="">
+                    <img data-aos="fade-up" src="./img/portfolio/image4.PNG" alt="">
                 </div>
                 <div class="img-box py-4">
-                    <img src="./img/portfolio/image1.png" alt="">
+                    <img data-aos="fade-up" src="./img/portfolio/image1.png" alt="">
                 </div>
                 <div class="img-box py-4 xl:w-1/2 xl:pr-4 xl:py-0 xl:pt-4 small">
-                    <img src="./img/portfolio/image3.PNG" alt="">
+                    <img data-aos="fade-up" src="./img/portfolio/image3.PNG" alt="">
                 </div>
                 <div class="img-box py-4 xl:w-1/2 xl:pl-4 xl:py-0 xl:pt-4">
-                    <img src="./img/portfolio/image2.PNG" alt="">
+                    <img data-aos="fade-up" src="./img/portfolio/image2.PNG" alt="">
                 </div>
             </div>
             <div class="portfolio-right xl flex xl:px-4 flex-col xl:w-1/2 xl:min-h-full xl:justify-between">
                 <div class="img-box py-4 xl:h-full">
-                    <img class="min-h-full" src="./img/portfolio/image6.PNG" alt="">
+                    <img data-aos="fade-up" class="min-h-full" src="./img/portfolio/image6.PNG" alt="">
                 </div>
                 <div class="img-box py-4 xl:py-0 xl:h-full xl:pt-4">
-                    <img class="" src="./img/portfolio/image7.PNG" alt="">
+                    <img data-aos="fade-up" class="" src="./img/portfolio/image7.PNG" alt="">
                 </div>
             </div>
         </div>
@@ -153,11 +158,11 @@
 
     <!--CLIENT DIV-->
     <div id="review" class="review">
-        <div class="review-content max-limit my-5 xl:mt-40">
+        <div data-aos="fade-up" class="review-content max-limit my-5 xl:mt-40 ">
 
 
             <div class="main-carousel overflow-hidden w-full">
-                <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
+                <div class="carousel-cell w-full lg:w-1/3 sm:px-2 lg:px-6 px-8">
                     <h1 class="text-2xl review-name">Conner</h1>
                     <p class="text-white">Front-End Developer, Great Britain</p>
                     <div class="review-message mt-2">
@@ -167,7 +172,7 @@
                             problem thrown at him is one of the many reasons he should build your next project!</p>
                     </div>
                 </div>
-                <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
+                <div class="carousel-cell w-full lg:w-1/3 sm:px-10 lg:px-6 px-8">
                     <h1 class="text-2xl review-name">Adam</h1>
                     <p class="text-white">UX / UI Designer, Great Britain</p>
                     <div class="review-message mt-2">
@@ -176,7 +181,7 @@
                             a prospering talent. I would highly recommend choosing him as your next web developer!</p>
                     </div>
                 </div>
-                <div class="carousel-cell w-full sm:w-1/2 lg:w-1/3 sm:px-2 lg:px-6 px-8">
+                <div class="carousel-cell w-full  lg:w-1/3 sm:px-2 lg:px-6 px-8">
                     <h1 class="text-2xl review-name">Nulzn</h1>
                     <p class="text-white">Back-End Student, Sweden</p>
                     <div class="review-message mt-2">
@@ -189,12 +194,9 @@
                 </div>
             </div>
             <ol class="flex justify-around w-1/2 mx-auto my-10">
-                <li class="text-xl self-center"><button><i class="fas fa-long-arrow-alt-left text-white"></i></button>
-                </li>
-                <li class="custom-dot self-center"><button></button></li>
-                <li class="custom-dot self-center"><button></button></li>
-                <li class="custom-dot self-center"><button></button></li>
-                <li class=" self-center text-xl"><button><i class="fas fa-long-arrow-alt-right text-white"></i></button>
+                <li class=" self-center"><button class="dotSelector"></button></li>
+                <li class=" self-center"><button class="dotSelector"></button></li>
+                <li class="self-center"><button class="dotSelector"></button></li>
                 </li>
             </ol>
         </div>
@@ -204,7 +206,7 @@
     <!--CONTACT DIV-->
     <div id="contact" class="contact my-10 xl:mt-40">
         <div class="contact-content max-limit flex flex-col px-5 xl:flex-row xl:self-center">
-            <div class="contact-left xl:self-center xl:w-1/2">
+            <div data-aos="fade-up" class="contact-left xl:self-center xl:w-1/2">
                 <h1 class="text-3xl text-white text-center xl:text-left">Get in touch</h1>
                 <p class="text-center text-white pt-4 sm:w-2/3 sm:mx-auto xl:text-left xl:mx-0 self-center">If you need
                     a quote for a project or need to ask me anything dont hesitate to send me a message and I will reply
@@ -217,37 +219,37 @@
                                 class="fab fa-linkedin"></i></a></div>
                 </div>
             </div>
-            <div class="contact-right mt-10 xl:self-center xl:w-1/2">
+            <div data-aos="fade-up" class="contact-right mt-10 xl:self-center xl:w-1/2">
                 <form id="myForm" method="POST" action="#contact">
                     <div class="form-top flex space-between flex-col self-center xl:flex-row">
                         <div class="input-form mx-auto self-center xl:mx-0">
                             <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="firstname">Your Name</label>
-                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
+                            <input required class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
                                 name="firstname" id="firstname" placeholder="Jonathon Doe">
                         </div>
                         <div class="input-form mx-auto pt-5 xl:pt-0 self-center xl:mx-6">
                             <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="email">Your Email</label>
-                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="email"
+                            <input required class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="email"
                                 name="email" id="email" placeholder="Jonathon@example.com">
                         </div>
                     </div>
                     <div class="form-middle flex space-between flex-col pt-5 xl:flex-row">
                         <div class="input-form mx-auto xl:self-center xl:mx-0">
                             <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="company">Company Name</label>
-                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
+                            <input  class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
                                 name="company" id="company" placeholder="Doe Enterprises">
                         </div>
                         <div class="input-form mx-auto pt-5 xl:pt-0 xl:self-center xl:mx-6">
                             <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="number">Contact
                                 Number</label>
-                            <input class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
+                            <input  class="bg-transparent block mx-auto px--1 text-white sm:w-full" type="text"
                                 name="number" id="number" placeholder="+12 3456 79901">
                         </div>
                     </div>
                     <div class="form-bottom">
                         <div class="input-form mx-auto pt-5  xl:pt-8 xl:mx-0">
-                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="number">Message</label>
-                            <textarea class="text-white bg-transparent sm:w-full min-w-full" name="message" cols="10"
+                            <label class="block mx-auto text-white pl-2 pb-3 xl:pl-0" for="message">Message</label>
+                            <textarea required class="text-white bg-transparent sm:w-full min-w-full" id="message" name="message" cols="10"
                                 rows="10"
                                 placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></textarea>
                         </div>
@@ -277,7 +279,7 @@
     function contactClick() {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
-        }, 2000);
+        }, 1400);
         $(".close").hide();
         $(".mobile-menu").hide();
         $(".hamburger").show();
@@ -287,7 +289,7 @@
     function testiClick() {
         $('html, body').animate({
             scrollTop: $("#review").offset().top
-        }, 2000);
+        }, 1400);
         $(".close").hide();
         $(".mobile-menu").hide();
         $(".hamburger").show();
@@ -296,7 +298,7 @@
     function workClick() {
         $('html, body').animate({
             scrollTop: $("#portfolio").offset().top
-        }, 2000);
+        }, 1400);
         $(".close").hide();
         $(".mobile-menu").hide();
         $(".hamburger").show();
@@ -305,7 +307,7 @@
     function serviceClick() {
         $('html, body').animate({
             scrollTop: $("#service").offset().top
-        }, 2000);
+        }, 1400);
         $(".close").hide();
         $(".mobile-menu").hide();
         $(".hamburger").show();
@@ -314,7 +316,7 @@
     function homeClick() {
         $('html, body').animate({
             scrollTop: $("#hero").offset().top
-        }, 2000);
+        }, 1400);
         $(".close").hide();
         $(".mobile-menu").hide();
         $(".hamburger").show();
@@ -340,14 +342,23 @@
         })
     })
 
+
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
         autoPlay: 2500,
         contain: true,
         prevNextButtons: false,
-        cellSelector: ".carousel-cell"
+        cellSelector: ".carousel-cell",
+        on : {
+          change : function(index) {
+            $(".dotSelector.active").removeClass("active");
+            $(".dotSelector").eq(index).addClass("active");
+          }
+        }
     });
+
+    AOS.init();
 </script>
 
 <script src="./form.js"></script>
