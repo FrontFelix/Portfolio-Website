@@ -163,7 +163,8 @@ export default function Portfolio() {
                       className={
                         project.github === "none" ? "image-pointer-block" : ""
                       }
-                      href="#"
+                      href={project.github}
+                      target="_blank"
                     >
                       <img className="object-cover" src={project.image} />
                     </a>
@@ -192,7 +193,8 @@ export default function Portfolio() {
                       className={
                         project.github === "none" ? "image-pointer-block" : ""
                       }
-                      href="#"
+                      href={project.github}
+                      target="_blank"
                     >
                       <img className="object-cover" src={project.image} />
                     </a>
@@ -221,7 +223,8 @@ export default function Portfolio() {
                       className={
                         project.github === "none" ? "image-pointer-block" : ""
                       }
-                      href="#"
+                      href={project.github}
+                      target="_blank"
                     >
                       <img className="object-cover" src={project.image} />
                     </a>
@@ -250,7 +253,8 @@ export default function Portfolio() {
                       className={
                         project.github === "none" ? "image-pointer-block" : ""
                       }
-                      href="#"
+                      href={project.github}
+                      target="_blank"
                     >
                       <img className="object-cover" src={project.image} />
                     </a>
