@@ -1,12 +1,12 @@
 export default function DesktopNavbar() {
   return (
     <div>
-      <nav className="relative px-4 py-4 flex justify-between items-center bg-white">
+      <nav className="relative px-8 lg:px-0 flex justify-between items-center text-white container-width">
         <a className="text-3xl font-bold leading-none" href="#">
           Felix
         </a>
         <div className="lg:hidden">
-          <button className="navbar-burger flex items-center text-blue-600 p-3">
+          <button className="navbar-burger flex items-center text-white">
             <svg
               className="block h-4 w-4 fill-current"
               viewBox="0 0 20 20"
@@ -17,24 +17,24 @@ export default function DesktopNavbar() {
             </svg>
           </button>
         </div>
-        <ul className="hidden lg:flex lg:items-center lg:w-auto gap-8">
+        <ul className="hidden lg:flex lg:items-center lg:w-auto gap-8 text-white">
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
+            <a className="text-sm hover:text-gray-500" href="#">
               Hem
             </a>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
+            <a className="text-sm  hover:text-gray-500" href="#">
               Portfolio
             </a>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
+            <a className="text-sm  hover:text-gray-500" href="#">
               Rekommendationer
             </a>
           </li>
           <li>
-            <a className="text-sm text-gray-400 hover:text-gray-500" href="#">
+            <a className="text-sm  hover:text-gray-500" href="#">
               Kontakt
             </a>
           </li>
