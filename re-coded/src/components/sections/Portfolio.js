@@ -65,8 +65,8 @@ export default function Portfolio() {
   );
   const [category, setCategory] = useState("all");
   return (
-    <div className="background-lines min-h-screen flex flex-col justify-center">
-      <div className="container-small-width w-full text-left text-white py-10 px-8 lg:px-0">
+    <div className="background-lines h-screen flex flex-col justify-center">
+      <div className="container-small-width w-full text-left text-white px-8 lg:px-0">
         <motion.h1
           variants={textVariants}
           animate={inView ? "visible" : "hidden"}
@@ -137,6 +137,7 @@ export default function Portfolio() {
             Fullstack
           </motion.button>
         </div>
+        <div className="min-height-50"> 
         <AnimatePresence mode="wait">
           {category === "all" && (
             <motion.div
@@ -264,6 +265,7 @@ export default function Portfolio() {
             </motion.div>
           )}
         </AnimatePresence>
+        </div>
       </div>
     </div>
   );

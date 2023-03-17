@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 
+import { AiOutlineCoffee } from "react-icons/ai"
+
 export default function Hero() {
   return (
     <div className="flex gap-5 flex-col lg:flex-row lg:justify-between lg:items-center p-8 lg:p-0 container-small-width text-white text-left">
@@ -27,16 +29,24 @@ export default function Hero() {
           mig till en skicklig utvecklare med öga för detaljer.
         </motion.p>
         <motion.a
+          className="flex items-center gap-4 bg-darker-primary w-1/3 justify-center py-1 rounded "
           initial={{ x: 100, opacity: 0 }}
           animate={{
             x: 0,
             opacity: 1,
-            transition: { duration: 0.3, delay: 0.4 },
+            y: [10, 10,0,10,0,10, 0, 10],
+            transition: { duration: 0.3, delay: 0.4, y: { delay: 1.2 , duration: 2.2}  },
           }}
+          href="#"
         >
-          Kontakta mig
+          <p>Träffas på kaffe ? </p>
+        <AiOutlineCoffee/>
         </motion.a>
-        <div>icon icon icon</div>
+        <div className="flex">
+          <a>
+
+          </a>
+        </div>
       </div>
       <div className="w-auto lg:w-auto">
         <motion.img

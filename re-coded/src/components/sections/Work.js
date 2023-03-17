@@ -11,7 +11,7 @@ export default function Work() {
   //   triggerOnce: true,
   // });
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, root: "" });
+  const inView = useInView(ref, { once: true });
 
   const variants = {
     visible: { opacity: 1, y: 0 },
@@ -25,17 +25,19 @@ export default function Work() {
   return (
     <div className="flex gap-5 flex-col p-8 lg:p-0 container-small-width text-white text-left w-full">
       <motion.h1
-        transition={{ duration: 0.2 }}
+        transition={{ duration: 0.2, when: "afterChildren" }}
         animate={inView ? "visible" : "hidden"}
         variants={textVariants}
         className="text-3xl"
+        initial="hidden"
       >
         Erfarenheter
       </motion.h1>
       <motion.p
-        transition={{ duration: 0.2, delay: 0.1 }}
+        transition={{ duration: 0.2, delay: 0.1, when: "beforeChildren"}}
         animate={inView ? "visible" : "hidden"}
         variants={textVariants}
+        initial="hidden"
       >
         Erfaren inom Front-end utveckling med fokus på användarupplevelse
       </motion.p>
@@ -45,6 +47,7 @@ export default function Work() {
           <motion.div
             ref={ref}
             animate={inView ? "visible" : "hidden"}
+            initial="hidden"
             variants={variants}
             transition={{ duration: 0.3, delay: 0.1 }}
             className="workBox mx-auto lg:mx-0 bg-blue-50 flex-col justify-between flex p-8 text-white rounded bg-darker-primary"
@@ -63,6 +66,7 @@ export default function Work() {
             </div>
           </motion.div>
           <motion.div
+            initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.3, delay: 0.2 }}
@@ -82,6 +86,7 @@ export default function Work() {
             </div>
           </motion.div>
           <motion.div
+            initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.3, delay: 0.3 }}
