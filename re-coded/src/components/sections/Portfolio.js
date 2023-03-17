@@ -65,7 +65,7 @@ export default function Portfolio() {
   );
   const [category, setCategory] = useState("all");
   return (
-    <div className="background-lines h-screen flex flex-col justify-center">
+    <div className="background-lines min-h-screen flex flex-col justify-center">
       <div className="container-small-width w-full text-left text-white px-8 lg:px-0">
         <motion.h1
           variants={textVariants}
@@ -90,7 +90,7 @@ export default function Portfolio() {
             transition={{ duration: 0.3, delay: 0.2 }}
             className={
               category === "all"
-                ? "bg-darker-primary py-1 px-4 text-center rounded text-white"
+                ? "bg-primary py-1 px-4 text-center rounded text-primary-black"
                 : "text-center rounded py-1 px-4"
             }
             onClick={() => setCategory("all")}
@@ -103,7 +103,7 @@ export default function Portfolio() {
             transition={{ duration: 0.3, delay: 0.22 }}
             className={
               category === "frontend"
-                ? "bg-darker-primary py-1 px-4 text-center rounded text-white"
+                ? "bg-primary py-1 px-4 text-center rounded text-primary-black"
                 : "text-center rounded py-1 px-4"
             }
             onClick={() => setCategory("frontend")}
@@ -116,7 +116,7 @@ export default function Portfolio() {
             transition={{ duration: 0.3, delay: 0.24 }}
             className={
               category === "backend"
-                ? "bg-darker-primary py-1 px-4 text-center rounded text-white"
+                ? "bg-primary py-1 px-4 text-center rounded text-primary-black"
                 : "text-center rounded py-1 px-4"
             }
             onClick={() => setCategory("backend")}
@@ -129,7 +129,7 @@ export default function Portfolio() {
             transition={{ duration: 0.3, delay: 0.26 }}
             className={
               category === "fullstack"
-                ? "bg-darker-primary py-1 px-4 text-center rounded text-white"
+                ? "bg-primary py-1 px-4 text-center rounded text-primary-black"
                 : "text-center rounded py-1 px-4"
             }
             onClick={() => setCategory("fullstack")}
@@ -137,134 +137,134 @@ export default function Portfolio() {
             Fullstack
           </motion.button>
         </div>
-        <div className="min-height-50"> 
-        <AnimatePresence mode="wait">
-          {category === "all" && (
-            <motion.div
-              transition={{ duration: 0.2 }}
-              key="all"
-              initial={{ y: 80, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 80, opacity: 0 }}
-              className="flex flex-wrap gap-4 my-4"
-            >
-              {projects.map((project, index) => (
-                <motion.div
-                  variants={variants}
-                  animate={inView ? "visible" : "hidden"}
-                  transition={{ duration: 0.3, delay: index * 0.05 + 0.3 }}
-                  className="project-box flex flex-col gap-2"
-                >
-                  {project.github === "none" ? (
-                    <div className="image-pointer-block">
-                      <img className="object-cover" src={project.image} />
-                    </div>
-                  ) : (
-                    <a
-                      className={
-                        project.github === "none" ? "image-pointer-block" : ""
-                      }
-                      href={project.github}
-                      target="_blank"
-                    >
-                      <img className="object-cover" src={project.image} />
-                    </a>
-                  )}
-                </motion.div>
-              ))}
-            </motion.div>
-          )}
-          {category === "frontend" && (
-            <motion.div
-              transition={{ duration: 0.2 }}
-              key="frontend"
-              initial={{ y: 80, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 80, opacity: 0 }}
-              className="flex flex-wrap gap-4 my-4"
-            >
-              {frontendProjects.map((project) => (
-                <div className="project-box flex flex-col gap-2">
-                  {project.github === "none" ? (
-                    <div className="image-pointer-block">
-                      <img className="object-cover" src={project.image} />
-                    </div>
-                  ) : (
-                    <a
-                      className={
-                        project.github === "none" ? "image-pointer-block" : ""
-                      }
-                      href={project.github}
-                      target="_blank"
-                    >
-                      <img className="object-cover" src={project.image} />
-                    </a>
-                  )}
-                </div>
-              ))}
-            </motion.div>
-          )}
-          {category === "backend" && (
-            <motion.div
-              transition={{ duration: 0.2 }}
-              key="backend"
-              initial={{ y: 80, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 80, opacity: 0 }}
-              className="flex flex-wrap gap-4 my-4"
-            >
-              {backendProjects.map((project) => (
-                <div className="project-box flex flex-col gap-2">
-                  {project.github === "none" ? (
-                    <div className="image-pointer-block">
-                      <img className="object-cover" src={project.image} />
-                    </div>
-                  ) : (
-                    <a
-                      className={
-                        project.github === "none" ? "image-pointer-block" : ""
-                      }
-                      href={project.github}
-                      target="_blank"
-                    >
-                      <img className="object-cover" src={project.image} />
-                    </a>
-                  )}
-                </div>
-              ))}
-            </motion.div>
-          )}
-          {category === "fullstack" && (
-            <motion.div
-              transition={{ duration: 0.2 }}
-              key="fullstack"
-              initial={{ y: 80, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 80, opacity: 0 }}
-              className="flex flex-wrap gap-4 my-4"
-            >
-              {fullstackProjects.map((project) => (
-                <div className="project-box flex flex-col gap-2">
-                  {project.github === "none" ? (
-                    <div className="image-pointer-block">
-                      <img className="object-cover" src={project.image} />
-                    </div>
-                  ) : (
-                    <a
-                      className={
-                        project.github === "none" ? "image-pointer-block" : ""
-                      }
-                      href={project.github}
-                      target="_blank"
-                    >
-                      <img className="object-cover" src={project.image} />
-                    </a>
-                  )}
-                </div>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <div className="min-height-50">
+          <AnimatePresence mode="wait">
+            {category === "all" && (
+              <motion.div
+                transition={{ duration: 0.2 }}
+                key="all"
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 80, opacity: 0 }}
+                className="flex flex-wrap gap-4 my-4"
+              >
+                {projects.map((project, index) => (
+                  <motion.div
+                    variants={variants}
+                    animate={inView ? "visible" : "hidden"}
+                    transition={{ duration: 0.3, delay: index * 0.05 + 0.3 }}
+                    className="project-box flex flex-col gap-2"
+                  >
+                    {project.github === "none" ? (
+                      <div className="image-pointer-block">
+                        <img className="object-cover" src={project.image} />
+                      </div>
+                    ) : (
+                      <a
+                        className={
+                          project.github === "none" ? "image-pointer-block" : ""
+                        }
+                        href={project.github}
+                        target="_blank"
+                      >
+                        <img className="object-cover" src={project.image} />
+                      </a>
+                    )}
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
+            {category === "frontend" && (
+              <motion.div
+                transition={{ duration: 0.2 }}
+                key="frontend"
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 80, opacity: 0 }}
+                className="flex flex-wrap gap-4 my-4"
+              >
+                {frontendProjects.map((project) => (
+                  <div className="project-box flex flex-col gap-2">
+                    {project.github === "none" ? (
+                      <div className="image-pointer-block">
+                        <img className="object-cover" src={project.image} />
+                      </div>
+                    ) : (
+                      <a
+                        className={
+                          project.github === "none" ? "image-pointer-block" : ""
+                        }
+                        href={project.github}
+                        target="_blank"
+                      >
+                        <img className="object-cover" src={project.image} />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </motion.div>
+            )}
+            {category === "backend" && (
+              <motion.div
+                transition={{ duration: 0.2 }}
+                key="backend"
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 80, opacity: 0 }}
+                className="flex flex-wrap gap-4 my-4"
+              >
+                {backendProjects.map((project) => (
+                  <div className="project-box flex flex-col gap-2">
+                    {project.github === "none" ? (
+                      <div className="image-pointer-block">
+                        <img className="object-cover" src={project.image} />
+                      </div>
+                    ) : (
+                      <a
+                        className={
+                          project.github === "none" ? "image-pointer-block" : ""
+                        }
+                        href={project.github}
+                        target="_blank"
+                      >
+                        <img className="object-cover" src={project.image} />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </motion.div>
+            )}
+            {category === "fullstack" && (
+              <motion.div
+                transition={{ duration: 0.2 }}
+                key="fullstack"
+                initial={{ y: 80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 80, opacity: 0 }}
+                className="flex flex-wrap gap-4 my-4"
+              >
+                {fullstackProjects.map((project) => (
+                  <div className="project-box flex flex-col gap-2">
+                    {project.github === "none" ? (
+                      <div className="image-pointer-block">
+                        <img className="object-cover" src={project.image} />
+                      </div>
+                    ) : (
+                      <a
+                        className={
+                          project.github === "none" ? "image-pointer-block" : ""
+                        }
+                        href={project.github}
+                        target="_blank"
+                      >
+                        <img className="object-cover" src={project.image} />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

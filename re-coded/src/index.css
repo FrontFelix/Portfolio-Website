@@ -44,6 +44,14 @@ code {
   background-color: #3b5998;
 }
 
+.color-darker-primary {
+  color: #3b5998;
+}
+
+.color-primary {
+  color: #85d5ff;
+}
+
 .bg-white {
   background-color: #ececec;
 }
@@ -67,7 +75,7 @@ code {
   height: 13rem;
 }
 
-.min-height-50{
+.min-height-50 {
   min-height: 50vh;
 }
 
@@ -97,8 +105,8 @@ code {
 
 .image-pointer-block:hover::before {
   content: "GitHub-länk saknas";
-  background-color: #3b5998;
-  color: #fff;
+  background-color: #85d5ff;
+  color: #1a1a1a;
   padding: 4px 8px;
   border-radius: 4px;
   position: absolute;
@@ -120,7 +128,6 @@ code {
   cursor: not-allowed;
 }
 
-
 .contact-input {
-  border-bottom: 2px solid #3b5998;
+  border-bottom: 2px solid #85d5ff;
 }

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-import { AiOutlineCoffee } from "react-icons/ai"
+import { AiOutlineCoffee } from "react-icons/ai";
 
 export default function Hero() {
   return (
@@ -29,23 +29,25 @@ export default function Hero() {
           mig till en skicklig utvecklare med öga för detaljer.
         </motion.p>
         <motion.a
-          className="flex items-center gap-4 bg-darker-primary w-1/3 justify-center py-1 rounded "
+          className="flex items-center gap-4 bg-primary w-1/3 justify-center py-1 rounded text-primary-black"
           initial={{ x: 100, opacity: 0 }}
           animate={{
             x: 0,
             opacity: 1,
-            y: [10, 10,0,10,0,10, 0, 10],
-            transition: { duration: 0.3, delay: 0.4, y: { delay: 1.2 , duration: 2.2}  },
+            y: [10, 10, 0, 10, 0, 10, 0, 10],
+            transition: {
+              duration: 0.3,
+              delay: 0.4,
+              y: { delay: 1.2, duration: 2.2 },
+            },
           }}
           href="#"
         >
           <p>Träffas på kaffe ? </p>
-        <AiOutlineCoffee/>
+          <AiOutlineCoffee />
         </motion.a>
         <div className="flex">
-          <a>
-
-          </a>
+          <a></a>
         </div>
       </div>
       <div className="w-auto lg:w-auto">
@@ -54,7 +56,7 @@ export default function Hero() {
           animate={{
             x: 0,
             opacity: 1,
-            borderBottom: "4px solid #3b5998",
+            borderBottom: "4px solid #85d5ff",
             transition: {
               duration: 0.3,
               delay: 0.7,
