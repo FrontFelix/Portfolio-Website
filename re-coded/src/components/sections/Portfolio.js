@@ -83,7 +83,7 @@ export default function Portfolio() {
         >
           Klicka på bilderna för att besöka GitHub och se mer!
         </motion.p>
-        <div className="filter-buttons flex gap-6 my-4">
+        <div className="filter-buttons flex lg:gap-6 my-4">
           <motion.button
             variants={textVariants}
             animate={inView ? "visible" : "hidden"}
@@ -137,7 +137,7 @@ export default function Portfolio() {
             Fullstack
           </motion.button>
         </div>
-        <div className="min-height-50">
+        <div className="min-h-screen lg:min-height-50">
           <AnimatePresence mode="wait">
             {category === "all" && (
               <motion.div

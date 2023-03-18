@@ -34,7 +34,7 @@ export default function Work() {
         Erfarenheter
       </motion.h1>
       <motion.p
-        transition={{ duration: 0.2, delay: 0.1, when: "beforeChildren"}}
+        transition={{ duration: 0.2, delay: 0.1, when: "beforeChildren" }}
         animate={inView ? "visible" : "hidden"}
         variants={textVariants}
         initial="hidden"

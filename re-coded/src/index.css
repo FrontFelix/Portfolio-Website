@@ -36,6 +36,10 @@ code {
   height: 340px;
 }
 
+.bg-primary-black {
+  background-color: #1a1a1a;
+}
+
 .bg-primary {
   background-color: #85d5ff;
 }
