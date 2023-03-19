@@ -20,7 +20,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container-small-width w-full text-left flex justify-between gap-8 lg:gap:0 items-center text-white flex-col lg:flex-row px-8 lg:px-0">
+    <div className="container-small-width w-full text-left flex justify-between gap-8 lg:gap:0 items-center text-white flex-col lg:flex-row px-8 lg:px-8 xl:px-0">
       <div className="w-full lg:w-2/5 flex gap-5 flex-col">
         <h1 className="text-3xl font-bold">Kontakta mig!</h1>
         <p className="text-xl">

@@ -1,7 +1,7 @@
 export default function DesktopNavbar() {
   return (
     <div>
-      <nav className="relative px-8 lg:px-0 flex justify-between items-center text-white container-width">
+      <nav className="relative px-8 lg:px-8 xl:px-0 flex justify-between items-center text-white container-width">
         <a className="text-3xl font-bold leading-none" href="#">
           Felix
         </a>

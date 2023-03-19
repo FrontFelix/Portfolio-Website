@@ -66,7 +66,7 @@ export default function Portfolio() {
   const [category, setCategory] = useState("all");
   return (
     <div className="background-lines min-h-screen flex flex-col justify-center">
-      <div className="container-small-width w-full text-left text-white px-8 lg:px-0">
+      <div className="container-small-width w-full text-left text-white px-8 lg:px-8 xl:px-0">
         <motion.h1
           variants={textVariants}
           animate={inView ? "visible" : "hidden"}
@@ -153,7 +153,7 @@ export default function Portfolio() {
                     variants={variants}
                     animate={inView ? "visible" : "hidden"}
                     transition={{ duration: 0.3, delay: index * 0.05 + 0.3 }}
-                    className="project-box flex flex-col gap-2"
+                    className="project-box w-full lg:w-96 md:w-2/5 flex flex-col gap-2"
                   >
                     {project.github === "none" ? (
                       <div className="image-pointer-block">

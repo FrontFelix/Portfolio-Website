@@ -45,7 +45,7 @@ export default function Reviews() {
     },
   ]);
   return (
-    <div className="flex flex-col p-8 lg:p-0 container-small-width text-white text-left w-full">
+    <div className="flex flex-col p-8 xl:p-0 container-small-width text-white text-left w-full">
       <motion.h1
         variants={textVariants}
         animate={inView ? "visible" : "hidden"}

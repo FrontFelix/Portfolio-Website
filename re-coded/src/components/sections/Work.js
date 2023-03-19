@@ -23,7 +23,7 @@ export default function Work() {
     hidden: { opacity: 0, x: -80 },
   };
   return (
-    <div className="flex gap-5 flex-col p-8 lg:p-0 container-small-width text-white text-left w-full">
+    <div className="flex gap-5 flex-col p-8 xl:p-0 container-small-width text-white text-left w-full">
       <motion.h1
         transition={{ duration: 0.2, when: "afterChildren" }}
         animate={inView ? "visible" : "hidden"}
@@ -43,7 +43,7 @@ export default function Work() {
       </motion.p>
       {/* Boxes Flex */}
       <div className="flex-col lg:flex-row justify-between">
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <motion.div
             ref={ref}
             animate={inView ? "visible" : "hidden"}

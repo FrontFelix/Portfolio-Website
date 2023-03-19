@@ -5,7 +5,7 @@ import { AiOutlineCoffee } from "react-icons/ai";
 
 export default function Hero() {
   return (
-    <div className="flex gap-5 flex-col lg:flex-row lg:justify-between lg:items-center p-8 lg:p-0 container-small-width text-white text-left">
+    <div className="flex gap-5 flex-col lg:flex-row lg:justify-between lg:items-center p-8 xl:p-0 container-small-width text-white text-left">
       <div className="flex flex-col gap-5 w-auto lg:w-auto">
         <motion.h1
           initial={{ x: -100, opacity: 0 }}
@@ -30,7 +30,7 @@ export default function Hero() {
           mig till en skicklig utvecklare med öga för detaljer.
         </motion.p>
         <motion.a
-          className="flex items-center gap-4 bg-primary w-2/3 mx-auto lg:mx-0 lg:w-1/3 justify-center py-1 rounded text-primary-black"
+          className="flex items-center gap-4 bg-primary md:w-1/2 w-2/3 mx-auto lg:mx-0 lg:w-1/3 justify-center py-1 rounded text-primary-black"
           initial={{ x: 100, opacity: 0 }}
           animate={{
             x: 0,
@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="w-auto lg:w-auto">
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center lg:justify-end">
           <motion.div
             initial={{ height: "100%" }}
             animate={{
@@ -68,7 +68,7 @@ export default function Hero() {
             className="z-20 absolute  w-2/3 lg:w-1/2 bg-primary-black"
           />
           <motion.img
-            className="w-2/3 lg:w-1/2 block mx-auto lg:ml-auto rounded"
+            className="w-2/3 lg:w-1/2 block mx-auto lg:mx-0 rounded"
             alt="profile picture"
             src="./me.jpg"
           />
