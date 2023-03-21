@@ -14,6 +14,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -66,8 +67,13 @@ code {
 
 .background-lines {
   background-size: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url("../public/portfolioBG.svg");
+}
+
+.half-height {
+  min-height: 65vh;
 }
 
 .project-box {

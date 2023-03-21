@@ -19,22 +19,22 @@ export default function DesktopNavbar() {
         </div>
         <ul className="hidden lg:flex lg:items-center lg:w-auto gap-8 text-white">
           <li>
-            <a className="text-sm hover:text-gray-500" href="#">
-              Hem
+            <a className="text-sm hover:text-gray-500" href="#experience">
+              Erfarenhet
             </a>
           </li>
           <li>
-            <a className="text-sm  hover:text-gray-500" href="#">
+            <a className="text-sm  hover:text-gray-500" href="#portfolio">
               Portfolio
             </a>
           </li>
           <li>
-            <a className="text-sm  hover:text-gray-500" href="#">
+            <a className="text-sm  hover:text-gray-500" href="#recommendations">
               Rekommendationer
             </a>
           </li>
           <li>
-            <a className="text-sm  hover:text-gray-500" href="#">
+            <a className="text-sm  hover:text-gray-500" href="#contact">
               Kontakt
             </a>
           </li>

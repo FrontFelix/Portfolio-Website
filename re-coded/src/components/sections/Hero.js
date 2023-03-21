@@ -65,10 +65,10 @@ export default function Hero() {
                 borderBottom: { duration: 0.05 },
               },
             }}
-            className="z-20 absolute  w-2/3 lg:w-1/2 bg-primary-black"
+            className="z-20 absolute  w-2/3 md:w-1/3 lg:w-1/2 bg-primary-black"
           />
           <motion.img
-            className="w-2/3 lg:w-1/2 block mx-auto lg:mx-0 rounded"
+            className="w-2/3 lg:w-1/2 md:w-1/3  block mx-auto lg:mx-0 rounded"
             alt="profile picture"
             src="./me.jpg"
           />

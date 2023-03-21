@@ -3,7 +3,7 @@ import MobileNavbar from "./MobileNavbar";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="relative">
       <DesktopNavbar />
       <MobileNavbar />
     </div>

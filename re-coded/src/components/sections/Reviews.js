@@ -16,14 +16,14 @@ export default function Reviews() {
 
   const [revs, setRevs] = useState([
     {
-      name: "Markus Wiland",
-      role: "IT-konsult på Garrison Consulting",
-      date: "2021-05-10",
+      name: "Mikael Gustafsson",
+      role: "Arkitekt/Utvecklare/Co-founder Garrison West",
+      date: "2023-03-21",
       description: `
-        Felix är en otroligt snabb och duktig person inom programmering med en passion för front-end utveckling. 
-        Han är en snabb inlärare som ständigt strävar efter att lära sig mer och utmana sig själv. Han är också mycket öppen för att utöka sin kunskap och utmana sig själv att lära sig nya saker,
-        inklusive back-end utveckling. 
-        Med sin positiva inställning och en vilja att ta sig an nya utmaningar, är Felix en duktig utvecklare.`,
+      Jag har fått möjligheten att jobba med Felix under 2 x 10 veckors praktik. Det har varit superkul att följa Felix utvecklingen under dessa perioder då han gått från klarhet till klarhet. Om jag skulle sammanfatta några nyckelord om Felix:
+       Grymma utvecklar-skills, han fått vara lite utanför sin comfortzone med nya ramverk och tekniker och lärt sig dessa på väldigt kort tid. Välskriven kod!
+      En riktigt problemlösare, han har get sig fan på att det skall gå och grottar runt och hittar alltid en bra eller kreativ lösning.
+        `,
     },
     {
       name: "Conner Murphy",
@@ -45,7 +45,7 @@ export default function Reviews() {
     },
   ]);
   return (
-    <div className="flex flex-col p-8 xl:p-0 container-small-width text-white text-left w-full">
+    <div id="recommendations" className="flex flex-col p-8 xl:p-0 container-small-width text-white text-left w-full">
       <motion.h1
         variants={textVariants}
         animate={inView ? "visible" : "hidden"}

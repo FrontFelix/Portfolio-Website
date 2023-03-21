@@ -23,7 +23,7 @@ export default function Work() {
     hidden: { opacity: 0, x: -80 },
   };
   return (
-    <div className="flex gap-5 flex-col p-8 xl:p-0 container-small-width text-white text-left w-full">
+    <div id="experience" className="flex gap-5 flex-col p-8 xl:p-0 container-small-width text-white text-left w-full">
       <motion.h1
         transition={{ duration: 0.2, when: "afterChildren" }}
         animate={inView ? "visible" : "hidden"}

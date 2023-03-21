@@ -65,8 +65,8 @@ export default function Portfolio() {
   );
   const [category, setCategory] = useState("all");
   return (
-    <div className="background-lines min-h-screen flex flex-col justify-center">
-      <div className="container-small-width w-full text-left text-white px-8 lg:px-8 xl:px-0">
+    <div className=" background-lines flex flex-col justify-center">
+      <div id="portfolio" className="container-small-width w-full text-left text-white px-8 lg:px-8 xl:px-0">
         <motion.h1
           variants={textVariants}
           animate={inView ? "visible" : "hidden"}
@@ -137,7 +137,7 @@ export default function Portfolio() {
             Fullstack
           </motion.button>
         </div>
-        <div className="min-h-screen lg:min-height-50">
+        <div className="lg:min-height-50">
           <AnimatePresence mode="wait">
             {category === "all" && (
               <motion.div
@@ -146,14 +146,14 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex flex-wrap gap-4 my-4"
+                className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {projects.map((project, index) => (
                   <motion.div
                     variants={variants}
                     animate={inView ? "visible" : "hidden"}
                     transition={{ duration: 0.3, delay: index * 0.05 + 0.3 }}
-                    className="project-box w-full lg:w-96 md:w-2/5 flex flex-col gap-2"
+                    className="project-box w-full lg:w-96 md:w-2/5 flex flex-col gap-2 h-60"
                   >
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
@@ -181,7 +181,7 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex flex-wrap gap-4 my-4"
+                className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {frontendProjects.map((project) => (
                   <div className="project-box flex flex-col gap-2">
@@ -211,7 +211,7 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex flex-wrap gap-4 my-4"
+                className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {backendProjects.map((project) => (
                   <div className="project-box flex flex-col gap-2">
@@ -241,10 +241,10 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex flex-wrap gap-4 my-4"
+                className="flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {fullstackProjects.map((project) => (
-                  <div className="project-box flex flex-col gap-2">
+                  <div className="half-height project-box flex flex-col gap-2">
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
                         <img className="object-cover" src={project.image} />
